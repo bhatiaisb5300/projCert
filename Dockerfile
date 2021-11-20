@@ -1,3 +1,3 @@
 FROM php:apache
-COPY projCert/website /var/www/html
+ADD website /var/www/html
 EXPOSE 80

@@ -18,19 +18,3 @@ spec:
         ports:
         - containerPort: 80
           name: web-port
-
-apiVersion: v1
-kind: Service
-metadata:
-  name: app
-  labels:
-    apps: app
-spec:
-  type: NodePort
-  ports:
-  - name: tcp-31081-5000
-    nodePort: 32000
-    port: 80
-    protocol: TCP
-  selector:
-    app: app
